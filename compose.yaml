@@ -1,0 +1,6 @@
+services:
+  apiautomation:
+    image: apiautomation
+    build:
+      context: .
+      dockerfile: ./Dockerfile
