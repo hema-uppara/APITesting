@@ -1,6 +1,5 @@
 import requests
 import pytest
-from pages.common import Common_API
 
 # Constants
 PUT_URL="https://ms-api-gateway-qa.azurewebsites.net/offers/v1/offers/2054363"
