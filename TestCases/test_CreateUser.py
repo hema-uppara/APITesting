@@ -3,7 +3,7 @@ import pytest
 from pages.common import Common_API
 
 # Constants
-POST_URL="https://ms-api-gateway-qa.azurewebsites.net/offers/v1/offers/submit"
+POST_URL="https://ms-api-gateway-qa.azurewebsites.net/offers/v1/offers"
 
 headers = {
         "Accept": "application/json",
