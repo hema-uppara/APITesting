@@ -37,4 +37,9 @@ jobs:
       - name: Generate Coverage Report
         run: |
           coverage report -m
+      - name: Run pytest
+        run: |
+           pip install pytest
+           pytest --junit-xml=report.xml
+           continue-on-error: true
       
