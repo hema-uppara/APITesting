@@ -16,3 +16,9 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+
+      - name: Grant execute permission to the script
+        run: chmod +x ./scripts/my-script.sh # Ensures the script is executable
+
+      - name: Run the script
+        run: ./scripts/my-script.sh # Executes the script using the 'run' keyword
