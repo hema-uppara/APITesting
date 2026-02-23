@@ -1,5 +1,6 @@
 import requests
 import pytest
+from pages.common import Common_API
 
 # Constants
 GET_URL = "https://ms-api-gateway-qa.azurewebsites.net/offers/v1/offers"
@@ -9,7 +10,10 @@ headers = {
         "countrycode": "BG"
     }
  
-class TestOffersAPI:
+class TestOffersAPI_GET:
+    REMOTE_URL = "http://localhost:4444/wd/hub" 
+
+    @pytest.fixture(scope="function")
 
     def test_get_all_offers_success(self):
      

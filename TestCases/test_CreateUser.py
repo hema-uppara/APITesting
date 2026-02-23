@@ -1,5 +1,6 @@
 import requests
 import pytest
+from pages.common import Common_API
 
 # Constants
 POST_URL="https://ms-api-gateway-qa.azurewebsites.net/offers/v1/offers/submit"
@@ -12,7 +13,9 @@ headers = {
 class TestOffersAPI_post:
 
 
-    @pytest.fixture
+    REMOTE_URL = "http://localhost:4444/wd/hub" 
+
+    @pytest.fixture(scope="function")
     def test_post_offer_payload(self):
         """Fixture to provide a standard offer payload"""
         return {

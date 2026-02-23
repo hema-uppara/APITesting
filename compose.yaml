@@ -4,3 +4,8 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
+
+  selenium-hub:
+    image: selenium/hub:latest
+    ports:
+      - "4444:4444"
