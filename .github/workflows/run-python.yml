@@ -41,5 +41,4 @@ jobs:
         run: |
            pip install pytest
            pytest --junit-xml=report.xml
-           continue-on-error: true
-      
+          
