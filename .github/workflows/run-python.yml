@@ -44,10 +44,8 @@ jobs:
           pytest --junitxml=report.xml || true # Runs tests and generates report
 
       - name: Convert XML to Excel
-        run: |
-          # Create a python script to parse report.xml and save to results.xlsx
-          python -c "import pandas as pd; import xml.etree.ElementTree as ET; ...your conversion logic here..."
-
+        run: python xml_to_excel.py
+          
       - name: Upload Excel Report
         uses: actions/upload-artifact@v4
         with:
