@@ -34,6 +34,11 @@ jobs:
       run: python ${{ github.workspace }}/generate_report.py
 
 
+    - name: Generate the Excel report
+      run: python generate_report.py
+
+      
+
     - name: Upload Report
       uses: actions/upload-artifact@v4
       with:
@@ -41,8 +46,5 @@ jobs:
          path: Generated_Report.xlsx # Use the correct path found in the debug step
          if-no-files-found: error
 
-
-    - name: Generate the Excel report
-      run: python generate_report.py
 
     
