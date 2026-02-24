@@ -1,0 +1,36 @@
+name: Daily House Report Script Execution
+
+on:
+  # push:
+  #   branches:
+  #     - main
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  run-scripts:
+    runs-on: ubuntu-latest
+
+    env:
+        sheet_name: ${{ secrets.sheet_name }}
+        sheet_id: ${{ secrets.sheet_id }}
+        app_password: ${{ secrets.app_password }}
+        sender_email: ${{ secrets.sender_email }}
+        recipient_mail: ${{ secrets.recipient_mail }}
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+    - name: Run Report Script
+      run: python report_script.py
