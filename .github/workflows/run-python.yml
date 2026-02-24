@@ -46,13 +46,15 @@ jobs:
         run: |
           coverage report -m
 
-      - name: Run report script using absolute path
-        run: python ${{ github.workspace }}/generate_report.py
+      #- name: Run report script using absolute path
+      #  run: python ${{ github.workspace }}/generate_report.py
 
+      - name: Run report generation script
+        run: python generate_report.py
 
-      - name: Upload Report
+      - name: Upload Excel report artifact
         uses: actions/upload-artifact@v4
         with:
-         name: Execution-Status-Report
-         path: Execution-Status-Report.xlsx # Use the correct path found in the debug step
-         if-no-files-found: error
+          name: Execution-Status-Report
+          path: Execution-Status-Report.xlsx
+          retention-days: 7 # Optional: define how long to keep the artifact
