@@ -1,5 +1,5 @@
 name: Python application build and test
-on: [push, pull_request] # Triggers the workflow on a push event
+on: [push, pull_request] 
 
 jobs:
   build:
