@@ -29,8 +29,8 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           pip install pytest pandas openpyxl
 
-      - name: Run report generation script
-        run: python generate_report.py
+      #- name: Run report generation script
+      #  run: python generate_report.py
 
       - name: Lint with Ruff
         run: |
