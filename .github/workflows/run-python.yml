@@ -52,9 +52,9 @@ jobs:
       - name: Run report generation script
         run: python generate_report.py
 
-      - name: Upload Excel report artifact
-        uses: actions/upload-artifact@v4
+
+      - name: Upload Excel artifact
+        uses: actions/upload-artifact@v4 # Use version 4 (or later) as recommended
         with:
-          name: Execution-Status-Report
+          name: Execution-Status-Report # The name of your artifact
           path: Execution-Status-Report.xlsx
-          retention-days: 7 # Optional: define how long to keep the artifact
