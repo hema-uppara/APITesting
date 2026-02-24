@@ -46,11 +46,9 @@ jobs:
       - name: Debug file location
         run: |
            pwd
-           ls -lh
-
-
+           ls -R
       - name: Run report generation script
-        run: python report_script.py
+        run: python TestCases/generate_script.py
       # The script "Generated_Report.xlsx" is created here
 
       - name: Upload Excel report artifact
