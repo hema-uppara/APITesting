@@ -44,12 +44,13 @@ jobs:
         run: |
           coverage report -m
 
-      - name: Run Pytest
-        run: |
-          pytest --junitxml=report.xml || true # Runs tests and generates report
+      - name: Run report generation script
+        run: python generate_report.py
 
-      - name: Upload Excel report as an artifact
+
+      - name: Upload Excel report artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ExcelReport
-          path: reports/MyReport.xlsx
+            name: Excel-Report
+            path: Generated_Report.xlsx
+            retention-days: 5
