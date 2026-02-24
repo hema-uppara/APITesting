@@ -13,7 +13,7 @@ pytest-cov==4.0.0
 ruff==v0.0.260
 coverage-badge~=1.1.0
 psycopg2==2.9.5
-pandas==1.4.3
+#pandas==1.4.3
 openpyxl==3.0.10
 numpy==1.22.3
 python-dotenv==0.20.0
