@@ -57,4 +57,4 @@ jobs:
         uses: actions/upload-artifact@v4 # Use version 4 (or later) as recommended
         with:
           name: Execution-Status-Report # The name of your artifact
-          path: Execution-Status-Report.xlsx
+          path: reports/Execution-Status-Report.xlsx
