@@ -54,6 +54,9 @@ jobs:
            pwd
            ls -R
 
+      - name: Run report script using absolute path
+        run: python ${{ github.workspace }}/generate_report.py
+
 
       - name: Upload Excel report artifact
         uses: actions/upload-artifact@v4
