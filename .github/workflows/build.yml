@@ -21,7 +21,7 @@ jobs:
         pip install pandas openpyxl # openpyxl is needed by pandas for Excel files
 
     - name: Run report generation script
-      run: python scripts/generate_report.py
+      run: python generate_report.py
 
     - name: Upload Excel report artifact
       uses: actions/upload-artifact@v4
