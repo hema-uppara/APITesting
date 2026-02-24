@@ -3,8 +3,8 @@ import pandas as pd
 import os
 
 # Sample data
-data = {'Column A': [1, 2, 3, 4],
-        'Column B': [5, 6, 7, 8]}
+data = {'TC#': [1, 2, 3, 4],
+        'TestCaseName': ['test_CreateUser', 'test_CreateuserOffersName', 'test_getuser', 'test_UpdateUser']}
 df = pd.DataFrame(data)
 
 # Define the output path
