@@ -1,0 +1,33 @@
+name: Run Tests and Generate Report
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      # Replace with your actual test command.
+      # Ensure it produces JUnit XML output. The 'if: always()' ensures this step runs even if tests fail.
+      - name: Run tests (e.g., Maven, Node, etc.)
+        run: |
+          # Example for Node.js (replace with your language/framework's command)
+          npm install
+          npm test -- --reporter junit --reporter-options 'output=test-results.xml'
+        continue-on-error: true # Allow subsequent steps to run even on test failure
+
+      - name: Publish Test Results Summary
+        uses: dorny/test-reporter@v1
+        with:
+          name: Test Results
+          path: test-results.xml # Path to your test results file(s)
+          reporter: java-junit # Specify the format of your test results
+          fail-on-error: true # Set to true if you want the GH job to fail on test failures
+
+      - name: Upload test results as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-report
+          path: test-results.xml
