@@ -1,4 +1,4 @@
-name: Generate Excel Report
+name: Generate Excel Report #latest
 
 on: [push, pull_request] 
 
