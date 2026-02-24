@@ -53,6 +53,6 @@ jobs:
       - name: Upload Report
         uses: actions/upload-artifact@v4
         with:
-         name: generated-report
-         path: Generated_Report.xlsx # Use the correct path found in the debug step
+         name: Execution-Status-Report
+         path: Execution-Status-Report.xlsx # Use the correct path found in the debug step
          if-no-files-found: error
