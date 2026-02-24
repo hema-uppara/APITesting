@@ -1,34 +1,17 @@
-import openpyxl
+# scripts/generate_report.py
+import pandas as pd
 import os
 
-def create_excel_report():
-    # Create a new Excel workbook and select the active sheet
-    workbook = openpyxl.Workbook()
-    sheet = workbook.active
-    sheet.title = "Execution Status Report" #
+# Sample data
+data = {'Column A': [1, 2, 3, 4],
+        'Column B': [5, 6, 7, 8]}
+df = pd.DataFrame(data)
 
-    # Add headers
-    sheet['A1'] = 'TC#'
-    sheet['B1'] = 'TestCaseName'
-    sheet['C1'] = 'Status'
-    sheet['D1'] = 'Comments'
+# Define the output path
+output_dir = 'reports'
+os.makedirs(output_dir, exist_ok=True)
+output_file = os.path.join(output_dir, 'automated_report.xlsx')
 
-    # Add some dummy data (replace with actual dynamic data from your workflow context)
-    data = [
-        ['Build Code', 'Team A', 'On Track', 'Build completed successfully'],
-        ['Run Tests', 'Team B', 'Potential Risk', 'Some tests are flaky'],
-        ['Deploy to Staging', 'Team C', 'Roadblock', 'Permissions issue']
-    ]
-
-    for row_data in data:
-        sheet.append(row_data)
-
-    # Save the workbook
-    file_path = 'Execution_Status_Report.xlsx'
-    workbook.save(file_path)
-    print(f"Created report: {file_path}")
-
-if __name__ == "__main__":
-    # Install openpyxl in your workflow step before running this script
-    create_excel_report()
-
+# Generate the Excel report
+df.to_excel(output_file, index=False, sheet_name='Report Data')
+print(f'Generated report: {output_file}')
