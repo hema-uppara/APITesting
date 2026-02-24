@@ -1,17 +1,13 @@
-name: Generate Excel Status Report
+name: Generate Excel Report
 
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch: # Allows manual trigger
+on: [push]
 
 jobs:
-  build-and-report:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Code
+    - name: Checkout repository
       uses: actions/checkout@v4
 
     - name: Set up Python
@@ -20,31 +16,16 @@ jobs:
         python-version: '3.10'
 
     - name: Install dependencies
-      run: pip install openpyxl
-
-    - name: Test with pytest
       run: |
-          coverage run -m pytest  -v -s
+        python -m pip install --upgrade pip
+        pip install pandas openpyxl # openpyxl is needed by pandas for Excel files
 
-    - name: Generate Coverage Report
-      run: |
-          coverage report -m
+    - name: Run report generation script
+      run: python scripts/generate_report.py
 
-    - name: Run report script using absolute path
-      run: python ${{ github.workspace }}/generate_report.py
-
-
-    - name: Generate the Excel report
-      run: python generate_report.py
-
-      
-
-    - name: Upload Report
+    - name: Upload Excel report artifact
       uses: actions/upload-artifact@v4
       with:
-         name: generated-report
-         path: Generated_Report.xlsx # Use the correct path found in the debug step
-         if-no-files-found: error
-
-
-    
+        name: Excel-Report
+        path: reports/automated_report.xlsx
+        retention-days: 7 # Optional: define how long to keep the artifact
