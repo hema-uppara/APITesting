@@ -48,15 +48,15 @@ jobs:
       - name: Debug file location
         run: |
            pwd
-           ls -R
+           ls -la Generated_Report.xlsx
 
       - name: Run report script using absolute path
         run: python ${{ github.workspace }}/generate_report.py
 
 
-      - name: Upload Excel report artifact
+      - name: Upload Report
         uses: actions/upload-artifact@v4
         with:
-         name: Excel-Report
-         path: Generated_Report.xlsx
-         retention-days: 5
+         name: generated-report
+         path: Generated_Report.xlsx # Use the correct path found in the debug step
+         if-no-files-found: error
