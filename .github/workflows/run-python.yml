@@ -49,14 +49,13 @@ jobs:
            ls -lh
 
 
-      - name: Run generate_report.py
-        #working-directory: ./APITesting # Change this to the actual directory of your script
-        run: python $GITHUB_WORKSPACE/generate_report.py
-
+      - name: Run report generation script
+        run: python report_script.py
+      # The script "Generated_Report.xlsx" is created here
 
       - name: Upload Excel report artifact
         uses: actions/upload-artifact@v4
         with:
-            name: Excel-Report
-            path: Generated_Report.xlsx
-            retention-days: 5
+         name: Excel-Report
+         path: Generated_Report.xlsx
+         retention-days: 5
