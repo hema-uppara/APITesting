@@ -8,10 +8,10 @@ def create_excel_report():
     sheet.title = "Execution Status Report" #
 
     # Add headers
-    sheet['A1'] = 'Task'
-    sheet['B1'] = 'Owner'
+    sheet['A1'] = 'TC#'
+    sheet['B1'] = 'TestCaseName'
     sheet['C1'] = 'Status'
-    sheet['D1'] = 'Notes'
+    sheet['D1'] = 'Comments'
 
     # Add some dummy data (replace with actual dynamic data from your workflow context)
     data = [

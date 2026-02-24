@@ -22,13 +22,27 @@ jobs:
     - name: Install dependencies
       run: pip install openpyxl
 
+    - name: Test with pytest
+      run: |
+          coverage run -m pytest  -v -s
+
+    - name: Generate Coverage Report
+      run: |
+          coverage report -m
+
+    - name: Run report script using absolute path
+      run: python ${{ github.workspace }}/generate_report.py
+
+
+    - name: Upload Report
+      uses: actions/upload-artifact@v4
+      with:
+         name: generated-report
+         path: Generated_Report.xlsx # Use the correct path found in the debug step
+         if-no-files-found: error
+
+
     - name: Generate the Excel report
       run: python generate_report.py
 
-    - name: Upload the Excel report as an artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: Execution-Status-Report
-        path: Execution_Status_Report.xlsx
-        # Optionally set a retention period
-        retention-days: 7
+    

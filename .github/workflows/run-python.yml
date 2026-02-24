@@ -45,10 +45,6 @@ jobs:
       - name: Generate Coverage Report
         run: |
           coverage report -m
-      - name: Debug file location
-        run: |
-           pwd
-           ls -la Generated_Report.xlsx
 
       - name: Run report script using absolute path
         run: python ${{ github.workspace }}/generate_report.py
