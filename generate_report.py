@@ -10,7 +10,7 @@ df = pd.DataFrame(data)
 # Define the output path
 output_dir = 'reports'
 os.makedirs(output_dir, exist_ok=True)
-output_file = os.path.join(output_dir, 'automated_report.xlsx')
+output_file = os.path.join(output_dir, 'Execution-Status-Report.xlsx')
 
 # Generate the Excel report
 df.to_excel(output_file, index=False, sheet_name='Report Data')
