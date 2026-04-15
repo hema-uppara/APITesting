@@ -1,0 +1,89 @@
+{
+  "offerType": "TARGETED_GAME_MASS",
+  "offerTier": "ALL",
+  "offerCode": "RLM backend use cases",
+  "rewardEngineExcluded": true,
+  "assignableFrom": "2026-04-15T09:55:00+01:00",
+  "assignableTo": "2026-04-20T22:30:00+01:00",
+  "displayOrder": 0,
+  "numberOfAssign": 1,
+  "numberOfUsage": 1,
+  "offerRewardRule": {
+    "ruleType": "GAME_INVITATION"
+  },
+  "offerRewardConditionRule": [
+    {
+      "conditionRuleType": "PRODUCT_PURCHASE_VALUE",
+      "productCode": "CG0000006570",
+      "requiredValue": 1
+    }
+  ],
+  "offerTitle": [
+    {
+      "language": "nl",
+      "text": "MIC-9908_future date_21/10/2025"
+    },
+    {
+      "language": "en",
+      "text": "MIC-9908_future date_21/10/2025"
+    }
+  ],
+  "offerDescription": [
+    {
+      "language": "nl",
+      "text": "<p><span>MIC-9908_future date_21/10/2025</span></p>"
+    },
+    {
+      "language": "en",
+      "text": "<p><span>MIC-9908_future date_21/10/2025</span></p>"
+    }
+  ],
+  "customText": [
+    {
+      "language": "nl",
+      "text": "MIC-9908_future date_21/10/2025"
+    },
+    {
+      "language": "en",
+      "text": "MIC-9908_future date_21/10/2025"
+    }
+  ],
+  "offerBackground": "21267266-666e-4856-a769-e85533846a4b",
+  "campaignName": "%$@%@%@%$@%$@@@",
+  "offerMechanics": "Testing Offer Mechanics",
+  "productType": "CR",
+  "versionNumber": "V3",
+  "partnerCode": "Playable",
+  "partnerFundingPercentage": 1,
+  "gameDetails": {
+    "prizeDescription": [
+      {
+        "language": "nl",
+        "text": "MIC-9908_future date_21/10/2025"
+      },
+      {
+        "language": "en",
+        "text": "MIC-9908_future date_21/10/2025"
+      }
+    ],
+    "gameURL": "www.shell.com",
+    "gameDescription": [
+      {
+        "language": "nl",
+        "text": "MIC-9908_future date_21/10/2025"
+      },
+      {
+        "language": "en",
+        "text": "MIC-9908_future date_21/10/2025"
+      }
+    ],
+    "gameIcon": "e8769945-221f-40e2-9220-0702df03c0cb",
+    "gameType": "Knowledge Game",
+    "gameTANDCURL": "www.shell.com",
+    "inviteDurationDays": 2,
+    "campaignOverviewImage": "a6e034ba-ce33-4540-b3d9-606a1c88a6a3"
+  },
+  "relatedOffers": {
+    "massOfferId": 2055244
+  }
+}

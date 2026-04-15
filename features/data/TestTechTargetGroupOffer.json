@@ -1,0 +1,46 @@
+{
+  "offerType": "TEST_TECH_TARGET_GROUP",
+  "offerTier": "GOPLUS",
+  "offerCode": "RLM backend use cases",
+  "rewardEngineExcluded": true,
+  "assignableFrom": "2026-04-15T09:55:00+01:00",
+  "assignableTo": "2026-04-20T22:30:00+01:00",
+  "deactivationAllowed": false,
+  "displayOrder": 0,
+  "initiallyActive": true,
+  "numberOfAssign": 10,
+  "offerRewardRule": {
+    "ruleType": "FIX_POINTS",
+    "productCode": "CG0000000360",
+    "rewardValue": 1
+  },
+  "rewardLimitType": "transaction",
+  "rewardLimitPeriod": "week",
+  "rewardLimitValue": 22,
+  "offerTitle": [
+    {
+      "language": "en",
+      "text": "Testing reward mall type"
+    }
+  ],
+  "offerDescription": [
+    {
+      "language": "en",
+      "text": "<p><span>Testing reward mall type</span></p>"
+    }
+  ],
+  "customText": [
+    {
+      "language": "en",
+      "text": "Testing reward mall type"
+    }
+  ],
+  "offerBackground": "b7e12fcc-f72a-57bd-9d5c-0b98d0baa48d",
+  "campaignName": "Testing campaig",
+  "offerMechanics": "Testing Offer Mechanics",
+  "productType": "EV",
+  "versionNumber": "V3",
+  "relatedOffers": {
+    "massOfferId": 2055282
+  }
+}

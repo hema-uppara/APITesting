@@ -1,0 +1,46 @@
+{
+  "offerType": "BASIC_MASS",
+  "offerTier": "VIP",
+  "offerCode": "surprise limitations",
+  "rewardEngineExcluded": true,
+"assignableFrom": "2026-04-15T09:55:00+01:00",
+  "assignableTo": "2026-04-20T22:30:00+01:00",
+  "displayOrder": 0,
+  "numberOfAssign": 0,
+  "offerRewardRule": {
+    "ruleType": "FIX_DISCOUNT",
+    "productCode": "CG0000000360",
+    "rewardValue": 10
+  },
+  "offerTitle": [
+    {
+      "language": "en",
+      "text": "Testing reward mall type"
+    }
+  ],
+  "offerDescription": [
+    {
+      "language": "en",
+      "text": "<p><span>Testing reward mall type</span></p>"
+    }
+  ],
+  "customText": [
+    {
+      "language": "en",
+      "text": "Testing reward mall type"
+    }
+  ],
+  "offerBackground": "bbf536be-97d7-5bf7-acf3-1d4f05c0bd86",
+  "campaignName": "Testing New off",
+  "offerMechanics": "Hema OM",
+  "productType": "EV",
+  "versionNumber": "V3",
+  "relatedOffers": {
+    "targetedOfferId": 2055170
+  },
+  "consents": {
+    "tested": true,
+    "redeemed": true,
+    "approved": true
+  }
+}

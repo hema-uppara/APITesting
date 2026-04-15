@@ -1,0 +1,11 @@
+<testsuite name="Accessibility.Accessibility Test" tests="1" errors="0" failures="0" skipped="1" time="0.0" timestamp="2023-07-12T16:19:40.318902" hostname="BNGECO-L-86290"><testcase classname="Accessibility.Accessibility Test" name="Test Shell Hub page for Accessibility" status="skipped" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Test Shell Hub page for Accessibility
+    Given user navigates to the Shell hub site ... skipped in 0.000s
+    Then user validates the entire page for Accessibility ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

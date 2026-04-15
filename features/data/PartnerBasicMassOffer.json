@@ -1,0 +1,45 @@
+{
+  "offerType": "PARTNER_BMO",
+  "offerTier": "ALL",
+  "offerCode": "surprise limitations",
+  "costOfReward": 2053982,
+  "rewardEngineExcluded": true,
+  "assignableFrom": "2026-04-20T00:00:00+01:00",
+  "assignableTo": "2026-04-25T22:30:00+01:00",
+  "displayOrder": 0,
+  "numberOfAssign": 10,
+  "offerRewardRule": {
+    "ruleType": "UNIT_BASED_PERCENTAGE",
+    "productCode": "CG0000000185",
+    "rewardIncrement": 1,
+    "rewardLimit": 10000,
+    "rounding": "MATH",
+    "rewardValue": 1
+  },
+  "offerTitle": [
+    {
+      "language": "en",
+      "text": "Testing reward mall type"
+    }
+  ],
+  "offerDescription": [
+    {
+      "language": "en",
+      "text": "<p><span>Testing reward mall type</span></p>"
+    }
+  ],
+  "customText": [
+    {
+      "language": "en",
+      "text": "Testing reward mall type"
+    }
+  ],
+  "offerResetDay": 1,
+  "offerBackground": "7043c927-2f16-5a34-b1d4-64aeb50de778",
+  "campaignName": "Testing campaig",
+  "offerMechanics": "Testing Offer Mechanics",
+  "productType": "EV",
+  "versionNumber": "V4",
+  "partnerCode": "Playable",
+  "partnerFundingPercentage": 10
+}

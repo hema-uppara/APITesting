@@ -1,0 +1,53 @@
+{
+  "offerType": "CONDITIONAL",
+  "offerTier": "GOPLUS",
+  "offerCode": "Error Validations",
+  "rewardEngineExcluded": true,
+ "assignableFrom": "2026-04-15T09:55:00+01:00",
+  "assignableTo": "2026-04-20T22:30:00+01:00",
+  "deactivationAllowed": false,
+  "displayOrder": 0,
+  "expirationDays": 1,
+  "initiallyActive": true,
+  "numberOfAssign": 4,
+  "numberOfUsage": 4,
+  "offerRewardRule": {
+    "ruleType": "UNIT_BASED_PERCENTAGE",
+    "productCode": "CG0000000362",
+    "rewardValue": 1
+  },
+  "offerTitle": [
+    {
+      "language": "en",
+      "text": "Testing reward mall type"
+    }
+  ],
+  "offerDescription": [
+    {
+      "language": "en",
+      "text": "<p><span>Testing reward mall type</span></p>"
+    }
+  ],
+  "customText": [
+    {
+      "language": "en",
+      "text": "Testing reward mall type"
+    }
+  ],
+  "offerBackground": "bbf536be-97d7-5bf7-acf3-1d4f05c0bd86",
+  "campaignName": "Testing campaig",
+  "offerMechanics": "Hema OM",
+  "productType": "EV",
+  "versionNumber": "V9",
+  "offerAchievementRule": [
+    {
+      "label": "stamp limitations",
+      "achievementRuleType": "COMBINED_PRODUCT_PURCHASE",
+      "requiredTransactions": 1,
+      "requiredQuantity": 1,
+      "includeProducts": [
+        "CG0000000362"
+      ]
+    }
+  ]
+}

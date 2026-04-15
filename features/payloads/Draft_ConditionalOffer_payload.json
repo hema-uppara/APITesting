@@ -1,0 +1,51 @@
+{
+  "offerType": "PARTNER_BMO",
+  "offerTier": "GOPLUS",
+  "offerCode": "RLM backend use cases",
+  "rewardEngineExcluded": true,
+  "assignableFrom": "2026-03-28T05:49:00+00:00",
+  "assignableTo": "2026-03-30T22:00:00+00:00",
+  "displayOrder": 0,
+  "numberOfAssign": 10,
+  "offerRewardRule": {
+    "ruleType": "UNIT_BASED_PERCENTAGE",
+    "productCode": "CG0000000360",
+    "rewardIncrement": 1,
+    "rewardLimit": 10000,
+    "rounding": "MATH",
+    "rewardValue": 1
+  },
+  "offerRewardConditionRule": [
+    {
+      "conditionRuleType": "PRODUCT_PURCHASE_VALUE",
+      "productCode": "CG0000000360",
+      "requiredValue": 1
+    }
+  ],
+  "offerTitle": [
+    {
+      "language": "en",
+      "text": "Testing reward mall type"
+    }
+  ],
+  "offerDescription": [
+    {
+      "language": "en",
+      "text": "<p><span>Testing reward mall type</span></p>"
+    }
+  ],
+  "customText": [
+    {
+      "language": "en",
+      "text": "Testing reward mall type"
+    }
+  ],
+  "offerResetDay": 1,
+  "offerBackground": "77ff4b5f-b0e8-5918-8253-751a433a5aa6",
+  "campaignName": "Hema CN",
+  "offerMechanics": "Testing Offer Mechanics",
+  "productType": "FU",
+  "versionNumber": "V3",
+  "partnerCode": "Playable",
+  "partnerFundingPercentage": 10
+}
