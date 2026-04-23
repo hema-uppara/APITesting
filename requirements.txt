@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# To ensure app dependencies are ported from your virtual environment/host machine into your container, run 'pip freeze > requirements.txt' in the terminal to overwrite this file
+
 attrs==23.2.0                # via pytest
 certifi==2023.7.22           # via selenium, urllib3
 charset-normalizer==3.3.2    # via requests, selenium
@@ -97,4 +96,3 @@ webencodings==0.5.1
 wsproto==1.2.0
 xmltodict==0.13.0
 estaf
->>>>>>> 46444d5 (first)
