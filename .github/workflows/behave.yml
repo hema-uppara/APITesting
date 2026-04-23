@@ -29,3 +29,19 @@ jobs:
 
       - name: Run Behave Tests
         run: behave
+      - name: Generate Coverage Report
+        run: |
+          coverage report -m
+
+      #- name: Run report script using absolute path
+      #  run: python ${{ github.workspace }}/generate_report.py
+
+      - name: Run report generation script
+        run: python generate_report.py
+
+
+      - name: Upload Excel artifact
+        uses: actions/upload-artifact@v4 # Use version 4 (or later) as recommended
+        with:
+          name: Execution-Status-Report # The name of your artifact
+          path: reports/Execution-Status-Report.xlsx
