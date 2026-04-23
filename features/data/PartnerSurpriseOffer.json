@@ -1,0 +1,43 @@
+{
+  "offerType": "PARTNER_SURPRISE",
+  "offerTier": "VIP",
+  "offerCode": "RLM backend use cases",
+  "rewardEngineExcluded": true,
+  "assignableFrom": "2026-04-15T09:55:00+01:00",
+  "assignableTo": "2026-04-20T22:30:00+01:00",
+  "deactivationAllowed": false,
+  "displayOrder": 0,
+  "initiallyActive": true,
+  "numberOfAssign": 10,
+  "numberOfUsage": 1,
+  "offerRewardRule": {
+    "ruleType": "PRODUCT_BASED_DISCOUNT",
+    "productCode": "CG0000000364",
+    "rewardValue": 1
+  },
+  "offerTitle": [
+    {
+      "language": "en",
+      "text": "Testing reward mall type"
+    }
+  ],
+  "offerDescription": [
+    {
+      "language": "en",
+      "text": "<p><span>Testing reward mall type</span></p>"
+    }
+  ],
+  "customText": [
+    {
+      "language": "en",
+      "text": "Testing reward mall type"
+    }
+  ],
+  "offerBackground": "0c10ab07-0ba0-5820-b00c-daaba63d1e9e",
+  "campaignName": "Testing campaig",
+  "offerMechanics": "Testing Offer Mechanics",
+  "productType": "NA",
+  "versionNumber": "V1",
+  "partnerCode": "Playable",
+  "partnerFundingPercentage": 10
+}

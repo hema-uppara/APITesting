@@ -1,0 +1,42 @@
+{
+  "offerType": "GOODWILL",
+  "offerTier": "GOPLUS",
+  "offerCode": "Surpise live offer",
+  "rewardEngineExcluded": true,
+  "assignableFrom": "2026-04-14T15:00:00+01:00",
+  "assignableTo": "2026-04-18T22:30:00+01:00",
+  "deactivationAllowed": false,
+  "displayOrder": 0,
+  "expirationDays": 1,
+  "initiallyActive": true,
+  "numberOfAssign": 10,
+  "numberOfUsage": 1,
+  "offerRewardRule": {
+    "ruleType": "UNIT_BASED_PERCENTAGE",
+    "productCode": "CG0000000360",
+    "rewardValue": 55
+  },
+  "offerTitle": [
+    {
+      "language": "en",
+      "text": "Testing reward mall type"
+    }
+  ],
+  "offerDescription": [
+    {
+      "language": "en",
+      "text": "<p><span>Testing reward mall type</span></p>"
+    }
+  ],
+  "customText": [
+    {
+      "language": "en",
+      "text": "Testing reward mall type"
+    }
+  ],
+  "offerBackground": "cecc668d-45d2-529f-bea9-fdc8997b3d00",
+  "campaignName": "Testing campaig",
+  "offerMechanics": "Testing Offer Mechanics",
+  "productType": "EV",
+  "versionNumber": "V3"
+}

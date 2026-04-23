@@ -1,0 +1,52 @@
+{
+  "offerType": "SEASONAL_BASIC_MASS",
+  "offerTier": "GOPLUS",
+  "offerCode": "RLM backend use cases",
+  "rewardEngineExcluded": true,
+  "assignableFrom": "2026-04-15T09:55:00+01:00",
+  "assignableTo": "2026-04-20T22:30:00+01:00",
+  "displayOrder": 0,
+  "numberOfAssign": 0,
+  "offerRewardRule": {
+    "ruleType": "FIX_POINTS",
+    "rewardValue": 10
+  },
+  "offerRewardConditionRule": [
+    {
+      "conditionRuleType": "PRODUCT_PURCHASE_VALUE",
+      "productCode": "CG0000000364",
+      "requiredValue": 1
+    }
+  ],
+  "offerTitle": [
+    {
+      "language": "en",
+      "text": "Testing reward mall type"
+    }
+  ],
+  "offerDescription": [
+    {
+      "language": "en",
+      "text": "<p><span>Testing reward mall type</span></p>"
+    }
+  ],
+  "customText": [
+    {
+      "language": "en",
+      "text": "Testing reward mall type"
+    }
+  ],
+  "offerBackground": "6c9daf0a-f066-5186-af99-ec92787bd5d1",
+  "campaignName": "Hema CN",
+  "offerMechanics": "Hema OM",
+  "productType": "CR",
+  "versionNumber": "V5",
+  "relatedOffers": {
+    "targetedOfferId": 2055316
+  },
+  "consents": {
+    "tested": true,
+    "redeemed": true,
+    "approved": true
+  }
+}

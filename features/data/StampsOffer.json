@@ -1,0 +1,83 @@
+{
+  "offerType": "STAMPS",
+  "offerTier": "ALL",
+  "offerCode": "STAMPS-1776171471100",
+  "costOfReward": 2,
+  "rewardEngineExcluded": true,
+  "acceptanceRequired": false,
+  "assignableFrom": "2026-04-15T09:55:00+01:00",
+  "assignableTo": "2026-04-20T22:30:00+01:00",
+  "deactivationAllowed": false,
+  "displayOrder": 0,
+  "expirationDays": 0,
+  "requiredStamp": 1,
+  "validityStartOffset": 0,
+  "isDefault": true,
+  "offerRewardRule": {
+    "ruleType": "FIX_DISCOUNT",
+    "productCode": "CG0000000364",
+    "rewardValue": 1
+  },
+  "offerRewardConditionRule": [
+    {
+      "conditionRuleType": "PRODUCT_PURCHASE_VALUE",
+      "productCode": "CG0000000362",
+      "requiredValue": 1
+    }
+  ],
+  "offerTitle": [
+    {
+      "language": "en",
+      "text": "Testing reward mall type"
+    }
+  ],
+  "offerDescription": [
+    {
+      "language": "en",
+      "text": "<p><span>Testing reward mall type</span></p>"
+    }
+  ],
+  "customText": [
+    {
+      "language": "en",
+      "text": "Testing reward mall type"
+    }
+  ],
+  "offerReceiptMessage": [
+    {
+      "language": "en",
+      "text": "Testing reward mall type"
+    }
+  ],
+  "offerBackground": "e8192c5b-346f-5826-b1b5-5d583baac0db",
+  "campaignName": "Testing campaig",
+  "offerMechanics": "Testing Offer Mechanics",
+  "productType": "EV",
+  "versionNumber": "V3",
+  "offerAchievementRule": [
+    {
+      "label": "stamp limitations",
+      "achievementRuleType": "PRODUCT_PURCHASE_VALUE",
+      "requiredQuantity": 1,
+      "progressIncrement": 1,
+      "excludeProducts": [
+        "CG0000000360"
+      ]
+    }
+  ],
+  "extraStampSurprise": {
+    "offerCode": "BGREWARD3",
+    "expirationDays": 10,
+    "offerBackground": "e8192c5b-346f-5826-b1b5-5d583baac0db",
+    "validityStartOffset": 0,
+    "offerReceiptMessage": [
+      {
+        "language": "en",
+        "text": "Testing reward mall type"
+      }
+    ]
+  },
+  "extraStampCounter": {
+    "offerCode": "surprise limitations"
+  }
+}

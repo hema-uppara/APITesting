@@ -1,0 +1,59 @@
+{
+  "offerType": "POINT_CONDITIONAL",
+  "offerTier": "ALL",
+  "offerCode": "surprise limitations",
+  "costOfReward": 2053982,
+  "rewardEngineExcluded": true,
+  "assignableFrom": "2026-04-15T09:55:00+01:00",
+  "assignableTo": "2026-04-20T22:30:00+01:00",
+  "deactivationAllowed": false,
+  "displayOrder": 0,
+  "expirationDays": 1,
+  "initiallyActive": true,
+  "numberOfAssign": 10,
+  "numberOfUsage": 1,
+  "offerRewardRule": {
+    "ruleType": "UNIT_BASED_DISCOUNT",
+    "productCode": "CG0000000360",
+    "rewardLimit": 10000,
+    "rewardValue": 1
+  },
+  "offerRewardConditionRule": [
+    {
+      "conditionRuleType": "PRODUCT_PURCHASE_VALUE"
+    }
+  ],
+  "offerTitle": [
+    {
+      "language": "en",
+      "text": "Testing reward mall type"
+    }
+  ],
+  "offerDescription": [
+    {
+      "language": "en",
+      "text": "<p><span>Testing reward mall type</span></p>"
+    }
+  ],
+  "customText": [
+    {
+      "language": "en",
+      "text": "Testing reward mall type"
+    }
+  ],
+  "offerReceiptMessage": [
+    {
+      "language": "en",
+      "text": "d6cdb149-b5da-58c6-aa63-fe8140fcae1d"
+    }
+  ],
+  "offerResetDay": 1,
+  "offerBackground": "bbf536be-97d7-5bf7-acf3-1d4f05c0bd86",
+  "campaignName": "Testing campaig",
+  "offerMechanics": "Testing Offer Mechanics",
+  "productType": "CR",
+  "versionNumber": "V3",
+  "partnerCode": "Playable",
+  "partnerFundingPercentage": 10,
+  "partnerPointsValue": 1
+}

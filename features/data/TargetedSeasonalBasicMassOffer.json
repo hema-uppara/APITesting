@@ -1,0 +1,38 @@
+{
+  "offerType": "TARGETED_SEASONAL_BASIC_MASS",
+  "offerTier": "GOPLUS",
+  "offerCode": "Surpise live offer",
+  "rewardEngineExcluded": true,
+  "assignableFrom": "2026-04-15T09:55:00+01:00",
+  "assignableTo": "2026-04-20T22:30:00+01:00",
+  "displayOrder": 0,
+  "numberOfAssign": 10,
+  "offerRewardRule": {
+    "ruleType": "PRODUCT_BASED_PERCENTAGE",
+    "productCode": "CG0000000366",
+    "rewardValue": 55
+  },
+  "offerTitle": [
+    {
+      "language": "en",
+      "text": "Testing reward mall type"
+    }
+  ],
+  "offerDescription": [
+    {
+      "language": "en",
+      "text": "<p><span>Testing reward mall type</span></p>"
+    }
+  ],
+  "customText": [
+    {
+      "language": "en",
+      "text": "Testing reward mall type"
+    }
+  ],
+  "offerBackground": "72082075-58b9-5bb3-99dc-20d808f9ee7b",
+  "campaignName": "Testing campaig",
+  "offerMechanics": "Testing Offer Mechanics",
+  "productType": "CR",
+  "versionNumber": "V9"
+}

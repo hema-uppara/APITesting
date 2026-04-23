@@ -1,0 +1,44 @@
+{
+  "offerType": "TECH_TARGET_GROUP",
+  "offerTier": "ALL",
+  "offerCode": "surprise limitations",
+  "rewardEngineExcluded": true,
+  "assignableFrom": "2026-04-15T09:55:00+01:00",
+  "assignableTo": "2026-04-20T22:30:00+01:00",
+  "deactivationAllowed": false,
+  "displayOrder": 0,
+  "initiallyActive": true,
+  "numberOfAssign": 10,
+  "offerRewardRule": {
+    "ruleType": "UNIT_BASED_PERCENTAGE",
+    "productCode": "CG0000000364",
+    "rewardValue": 55
+  },
+  "rewardLimitType": "quantity",
+  "rewardLimitPeriod": "offerValidity",
+  "rewardLimitValue": 22,
+  "dispProductMeasuredIn": "units",
+  "offerTitle": [
+    {
+      "language": "en",
+      "text": "Testing reward mall type"
+    }
+  ],
+  "offerDescription": [
+    {
+      "language": "en",
+      "text": "<p><span>Testing reward mall type</span></p>"
+    }
+  ],
+  "customText": [
+    {
+      "language": "en",
+      "text": "Testing reward mall type"
+    }
+  ],
+  "offerBackground": "265c176b-8c09-515a-8f15-fa094c82465e",
+  "campaignName": "Testing campaig",
+  "offerMechanics": "Testing Offer Mechanics",
+  "productType": "CR",
+  "versionNumber": "V3"
+}
