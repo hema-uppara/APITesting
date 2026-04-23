@@ -53,3 +53,10 @@ jobs:
       - name: Verify dependency consistency
         run: pip check
 
+      - name: Upload Excel execution report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: behave-execution-github-report
+          path: reports/*.xlsx
+
