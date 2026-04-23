@@ -1,46 +1,31 @@
-name Behave  ESTAF Automation
+name: Behave ESTAF Automation
 
-on
-  push
-    branches
+on:
+  push:
+    branches:
       - main
       - develop
-  pull_request
-    branches
+  pull_request:
+    branches:
       - main
-  workflow_dispatch   # Allows manual trigger from GitHub UI
+  workflow_dispatch:
 
-jobs
-  behave-tests
-    runs-on ubuntu-latest
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
 
-    env
-      PYTHON_VERSION 3.10
-      # Example ENV qa
-      # Example BROWSER chrome
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
 
-    steps
-      - name Checkout repository
-        uses actionscheckout@v4
-
-      - name Set up Python
-        uses actionssetup-python@v5
-        with
-          python-version ${{ env.PYTHON_VERSION }}
-
-      - name Upgrade pip
-        run 
+      - name: Install Dependencies
+        run: |
           python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-      - name Install dependencies
-        run 
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-
-      # Optional Install ESTAF if it’s a separate package
-      # - name Install ESTAF
-      #   run 
-      #     pip install estaf-framework
-
-      - name Run Behave tests
-        run 
-          behave 
+      - name: Run Behave Tests
+        run: behave
