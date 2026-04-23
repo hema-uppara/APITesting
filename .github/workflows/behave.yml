@@ -45,3 +45,11 @@ jobs:
         with:
           name: Execution-Status-Report # The name of your artifact
           path: reports/Execution-Status-Report.xlsx
+
+        
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Verify dependency consistency
+        run: pip check
+
