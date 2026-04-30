@@ -1,0 +1,77 @@
+{
+  "offerType": "GAME_MASS",
+  //"offerTier": "ALL",
+  "offerCode": "surprise limitations",
+  "rewardEngineExcluded": true,
+  "assignableFrom": "2026-04-29T07:34:00+01:00",
+  "assignableTo": "2026-04-29T22:00:00+01:00",
+  "displayOrder": 0,
+  "numberOfAssign": 1,
+  "numberOfUsage": 1,
+  "offerRewardRule": {
+    "ruleType": "GAME_INVITATION"
+  },
+  "offerRewardConditionRule": [
+    {
+      "conditionRuleType": "PRODUCT_PURCHASE_MULTI_VALUE",
+      "productCode": "CG0000000364",
+      "requiredValue": 1,
+      "conditionType": "COST_ENDS_WITH",
+      "endingValue": 23,
+      "upperLimit": 200
+    }
+  ],
+  "offerTitle": [
+    {
+      "language": "en",
+      "text": "create draft basic mass"
+    }
+  ],
+  "offerDescription": [
+    {
+      "language": "en",
+      "text": "<p><span>create draft basic mass</span></p>"
+    }
+  ],
+  "customText": [
+    {
+      "language": "en",
+      "text": "create draft basic mass"
+    }
+  ],
+  "offerBackground": "77ff4b5f-b0e8-5918-8253-751a433a5aa6",
+  "campaignName": "Testing campaig",
+  "offerMechanics": "Testing Offer Mechanics",
+  "productType": "CR",
+  "versionNumber": "V3",
+  "partnerCode": "Playable",
+  "partnerFundingPercentage": 1,
+  "gameDetails": {
+    "prizeDescription": [
+      {
+        "language": "en",
+        "text": "Testing Prize Description"
+      }
+    ],
+    "gameURL": "www.shell.com",
+    "gameDescription": [
+      {
+        "language": "en",
+        "text": "Testing Game Description"
+      }
+    ],
+    "gameIcon": "1d8a16a1-5e08-5325-b756-af5347be4dd1",
+    "gameType": "Knowledge Game",
+    "gameTANDCURL": "www.shell.com",
+    "inviteDurationDays": 2,
+    "campaignOverviewImage": "abd62551-98ed-513d-8c9e-3e8a361a491f"
+  },
+  "relatedOffers": {
+    "targetedOfferId": 3000009934
+  },
+  "consents": {
+    "tested": true,
+    "redeemed": true,
+    "approved": true
+  }
+}

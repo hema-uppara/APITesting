@@ -3,6 +3,7 @@ import requests
 from datetime import datetime, timedelta
 from features.utils.config import Config
 
+
 class OffersClient:
 
     @staticmethod
